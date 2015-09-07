@@ -12,11 +12,48 @@
   </style>
 </head>
 <body>
-  
-<div id='map-two' class='map'> </div>
+
+<div id='map' class='map'> </div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGVlcGFuayIsImEiOiJzX251YTJjIn0.BYwQttCUSbXmPAW_Rly1fw';
-L.mapbox.map('map-two', 'mapbox.streets').setView([22.3145444,87.3090667], 14);
+var geolocate = document.getElementById('geolocate');
+var map = L.mapbox.map('map', 'mapbox.streets').setView([22.3145444,87.3090667], 14);
+var myLayer = L.mapbox.featureLayer().addTo(map)
+
+
+if (!navigator.geolocation) {
+  geolocate.innerHTML = 'Geolocation is not available';
+} else {
+  geolocate.onclick = function (e) {
+    
+   e.preventDefault();
+   e.stopPropagation();
+   map.locate();
+  };
+}
+
+map.on('locationfound', function(e) {
+  map.fitBounds(e.bounds);
+  myLayer.setGeoJSON({
+    type: 'Feature', 
+    geometry: {
+      type: 'Point',
+      coordinates: [e.latlng.lng, e.latlng.lat]
+    },
+    properties: {
+      'title': 'Here I am!',
+      'marker-color': '#ff8888',
+      'marker-symbol': 'star'
+    }
+  });
+  
+  geolocate.parentNode.removeChild(geolocate);
+});
+
+map.on('locationerror', function() {
+  geolocate.innerHTML = 'Position could not be found';
+});
+
 </script>
 </body>
 </html>
