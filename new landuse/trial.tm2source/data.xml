@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[sdf]]></Parameter>
+  <Parameter name="center">74.6121,25.3547,0</Parameter>
+  <Parameter name="description"><![CDATA[asd]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"AGRICULTURAL","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">15</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[agri]]></Parameter>
+</Parameters>
+
+
+<Layer name="AGRICULTURAL"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\AGRICULTURAL.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">174.6855,53.603,13</Parameter>
+  <Parameter name="description"><![CDATA[Landuse]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"TRANSPORTATION","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"AGRICULTURAL","description":"Agricultural","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"COMMERCIAL","description":"commercial","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"FOREST","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"INDUSTRIAL","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"OPEN","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"OPEN_GREEN","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"PS","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"RESIDENTIAL","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"RESTRICTED","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"UTILITIES","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}},{"id":"WATER","description":"","fields":{"lu":"String","area":"Number","Ward_NO":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">13</Parameter>
+  <Parameter name="name"><![CDATA[Bhilwara]]></Parameter>
+</Parameters>
+
+
+<Layer name="TRANSPORTATION"
+  buffer-size="10"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\TRANSPORTATION.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="AGRICULTURAL"
+  buffer-size="18"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\AGRICULTURAL.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="COMMERCIAL"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\COMMERCIAL.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="FOREST"
+  buffer-size="18"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\FOREST.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="INDUSTRIAL"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\INDUSTRIAL.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="OPEN"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\OPEN.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="OPEN_GREEN"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\OPEN_GREEN.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="PS"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\PS.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RESIDENTIAL"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\RESIDENTIAL.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RESTRICTED"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\RESTRICTED.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="UTILITIES"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\UTILITIES.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="WATER"
+  buffer-size="8"
+  srs="+proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\WATER.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

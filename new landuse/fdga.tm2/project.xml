@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#dbc7c7">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">74.6293,25.3278,13</Parameter>
+  <Parameter name="description"><![CDATA[Landuse]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">13</Parameter>
+  <Parameter name="name"><![CDATA[BHILWARA]]></Parameter>
+  <Parameter name="source"><![CDATA[tmsource://c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse/New_source.tm2source]]></Parameter>
+</Parameters>
+
+
+<Style name="TRANSPORTATION" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="5" stroke="rgba(15, 14, 14, 0.95)" />
+    <PolygonSymbolizer fill="#857f7f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.8" stroke="rgba(15, 14, 14, 0.95)" />
+    <PolygonSymbolizer fill="#c9c1c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" />
+  </Rule>
+</Style>
+<Layer name="TRANSPORTATION"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>TRANSPORTATION</StyleName>  </Layer>
+
+<Style name="AGRICULTURAL" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#98ab57" clip="true" />
+  </Rule>
+</Style>
+<Layer name="AGRICULTURAL"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>AGRICULTURAL</StyleName>  </Layer>
+
+<Style name="COMMERCIAL" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <BuildingSymbolizer fill="#4c63df" />
+  </Rule>
+</Style>
+<Layer name="COMMERCIAL"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>COMMERCIAL</StyleName>  </Layer>
+
+<Style name="FOREST" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#3dcb4d" />
+  </Rule>
+</Style>
+<Layer name="FOREST"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>FOREST</StyleName>  </Layer>
+
+<Style name="INDUSTRIAL" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#bd3dcb" />
+  </Rule>
+</Style>
+<Layer name="INDUSTRIAL"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>INDUSTRIAL</StyleName>  </Layer>
+
+<Style name="OPEN" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <BuildingSymbolizer fill="#f1eee5" />
+  </Rule>
+</Style>
+<Layer name="OPEN"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>OPEN</StyleName>  </Layer>
+
+<Style name="OPEN_GREEN" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <BuildingSymbolizer fill="#177826" />
+  </Rule>
+</Style>
+<Layer name="OPEN_GREEN"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>OPEN_GREEN</StyleName>  </Layer>
+
+<Style name="PS" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <BuildingSymbolizer fill="#f21629" />
+  </Rule>
+</Style>
+<Layer name="PS"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>PS</StyleName>  </Layer>
+
+<Style name="RESIDENTIAL" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <LineSymbolizer stroke="rgba(231, 240, 21, 0.5)" />
+    <BuildingSymbolizer fill="#dee013" />
+  </Rule>
+</Style>
+<Layer name="RESIDENTIAL"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>RESIDENTIAL</StyleName>  </Layer>
+
+<Style name="RESTRICTED" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(221, 136, 68, 0.5)" />
+    <BuildingSymbolizer fill="#c78a8a" />
+  </Rule>
+</Style>
+<Layer name="RESTRICTED"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>RESTRICTED</StyleName>  </Layer>
+
+<Style name="UTILITIES" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(248, 220, 11, 0.89)" />
+    <BuildingSymbolizer fill="#efcb0a" />
+  </Rule>
+</Style>
+<Layer name="UTILITIES"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>UTILITIES</StyleName>  </Layer>
+
+<Style name="WATER" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(238, 136, 68, 0.5)" />
+    <BuildingSymbolizer fill="#96b5f4" />
+  </Rule>
+</Style>
+<Layer name="WATER"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>WATER</StyleName>  </Layer>
+
+</Map>

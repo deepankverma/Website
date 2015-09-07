@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 74.6293
+  - 25.3278
+  - 13
+description: Landuse
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 16
+minzoom: 13
+name: BHILWARA
+source: "tmsource://c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse/New_source.tm2source"
+styles: 
+  - style.mss
+template: ''

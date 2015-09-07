@@ -1,0 +1,28 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: sdf
+center: 
+  - 74.6121
+  - 25.3547
+  - 0
+description: asd
+Layer: 
+  - id: AGRICULTURAL
+    Datasource: 
+      file: "c:/Users/DEEPANK/Desktop/Mapbox_website/new landuse\\AGRICULTURAL.shp"
+      type: shape
+    description: ''
+    fields: 
+      area: Number
+      lu: String
+      Ward_NO: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=43 +ellps=WGS84 +units=m +no_defs
+maxzoom: 15
+minzoom: 0
+name: agri
